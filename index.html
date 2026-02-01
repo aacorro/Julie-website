@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home✨</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fun-corner.css">
+</head>
+
+<body>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1> ✨ Julie ✨</h1>
+            <p>
+                Hi! Welcome to my website!  
+                I love gymnastics, noodles, Katseye 🎶, and doing tricks.
+                This is a place for my friends to have fun!
+            </p>
+        </div>
+    
+        <div class="hero-img">
+            <img src="image/IMG_0917.jpeg" alt="Juliette at Sturgeon Bay">
+        </div>
+    </section>
+    
+
+<section>
+    <h2>✨ My Favorites ✨</h2>
+    <div class="cards">
+        <div class="card">🤸 Favorite Sport<br><b>Gymnastics</b></div>
+        <div class="card">🎤 Favorite Singer<br><b>Katseye</b></div>
+        <div class="card">🍜 Favorite Food<br><b>Noodles</b></div>
+        <div class="card">🎨 Hobbies<br><b>Art</b></div>
+    </div>
+</section>
+
+<section>
+    <h2>📸 A Glance of Some Of My Adventures</h2>
+
+    <div class="gallery">
+
+        <div class="photo-card">
+            <div class="photo-box">
+                <img src="image/alpaca.png" alt="At the zoo petting an alpaca">
+            </div>
+            <p>Zoo & Alpaca 🦙</p>
+        </div>
+
+        <div class="photo-card">
+            <div class="photo-box">
+                <img src="image/IMG_0117.png" alt="Wearing a dinosaur blanket">
+            </div>
+            <p>Dinosaur Blanket 🦖</p>
+        </div>
+
+        <div class="photo-card">
+            <div class="photo-box">
+                <img src="/image/IMG_9927.jpg" alt="Playing with slime">
+            </div>
+            <p>Slime Time 🧪</p>
+        </div>
+
+        <div class="photo-card">
+            <div class="photo-box">
+                <img src="image/IMG_9886.jpg" alt="At the beach">
+            </div>
+            <p>At the Beach 🌊</p>
+        </div>
+
+        <div class="photo-card">
+            <div class="photo-box">
+                <img src="image/IMG_0720.jpg" alt="Playing in the snow">
+            </div>
+            <p>Snow Fun ❄️</p>
+        </div>
+
+        <div class="photo-card">
+            <div class="photo-box">
+                <img src="image/pingPong.png" alt="Playing ping pong">
+            </div>
+            <p>Ping Pong 🏓</p>
+        </div>
+
+        <div class="photo-card">
+            <div class="photo-box">
+                <img src="image/guineaPigs.png" alt="Holding baby guinea pigs">
+            </div>
+            <p>Guinea Pigs 🐹</p>
+        </div>
+
+        <div class="photo-card">
+            <div class="photo-box">
+                <img src="image/IMG_8592.PNG" alt="Jumping on a trampoline">
+            </div>
+            <p>Trampoline 🤸</p>
+        </div>
+
+        <div class="photo-card">
+            <div class="photo-box">
+                <img src="image/IMG_9341.JPEG" alt="Reading while doing a flip">
+            </div>
+            <p>Reading + Flip 📖</p>
+        </div>
+
+        <div class="photo-card">
+            <div class="photo-box">
+                <img src="image/dadsClothes.png" alt="Wearing dad’s clothes">
+            </div>
+            <p>Dad’s Clothes 😆</p>
+        </div>
+
+        <div class="photo-card">
+            <div class="photo-box">
+                <img src="image/3866426509885710681.JPG" alt="Eating sushi">
+            </div>
+            <p>Sushi 🍣</p>    
+        </div>
+
+
+        <div class="photo-card">
+            <div class="photo-box">
+                <img src="image/IMG_0447.JPG" alt="Eating S'mores">
+            </div>
+            <p>S'more 🍫</p>    
+        </div>
+
+    
+        <div class="photo-card">
+            <div class="photo-box">
+                <img src="image/gymnasticsTop.png" alt="First place">
+            </div>
+            <p>Gymnasics🤸‍♀️</p>    
+        </div>
+
+        <div class="photo-card">
+            <div class="photo-box">
+                <img src="image/baking.png" alt="Heart shaped cookies ">
+            </div>
+            <p>Baking cookies 🍪</p>    
+        </div>
+
+        <div class="photo-card">
+            <div class="photo-box">
+                <img src="image/startbucks.png" alt="drinking starbucks">
+            </div>
+            <p>Starbucks🧋</p>    
+        </div>
+
+        <div class="photo-card">
+            <div class="photo-box">
+                <img src="image/concert.png" alt="playing in my band concert">
+            </div>
+            <p>Band concert 🎶</p>    
+        </div>
+    </div>
+</section>
+
+<!-- Magic Trick -->
+<section class="card magic-card">
+    <h2>🎩 Magic Number Trick</h2>
+    <button onclick="startMagicTrick()">Start the Magic ✨</button>
+</section>
+
+<!-- Memory Game -->
+<section class="card memory-game">
+    <h2>🃏 Memory Card Game</h2>
+    <p>Match all pairs to win!</p>
+    <p>Time: <span id="memoryTimer">0.0s</span></p>
+    <div id="memoryBoard" class="memory-board"></div>
+    <p>Leaderboard:</p>
+    <ul id="memoryLeaderboard"></ul>
+</section>
+
+
+<!-- Reaction Game -->
+<section class="card reaction-game">
+    <h2>⚡ Reaction Time Game</h2>
+    <p>Wait for green, then click!</p>
+
+    <div id="reactionBox">WAIT…</div>
+    <button id="reactionStartBtn">Start Game 🚦</button>
+    <p id="reactionMessage"></p>
+
+    <h3>🏆 Fastest Reactions</h3>
+    <ol id="reactionLeaderboard"></ol>
+</section>
+
+<script src="script.js"></script>
+
+
+
+<footer>
+    <p>Follow me on Pinterest 💖</p>
+    <a href="https://pin.it/1clj4KF6Y/" target="_blank">My Pinterest</a>
+</footer>
+
+</body>
+</html>

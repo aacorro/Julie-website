@@ -1,0 +1,317 @@
+body {
+    margin: 0;
+    font-family: "Comic Sans MS", "Trebuchet MS", sans-serif;
+    background: linear-gradient(to bottom, #fff7d6, #ffd6f6);
+    color: #333;
+}
+
+section {
+    padding: 50px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+}
+
+.hero-text {
+    max-width: 450px;
+}
+
+.hero-img {
+    max-width: 400px;  /* max width for the hero image */
+    width: 100%;        /* make it responsive */
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.hero-img img {
+    width: 100%;
+    height: auto;       /* keep aspect ratio */
+    display: block;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* GALLERY */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+}
+
+.photo {
+    background: #eee;
+    height: 160px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* GAMES */
+.game {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+button {
+    background: rgb(81, 179, 133);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(122, 36, 146);
+}
+
+input {
+    padding: 8px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    width: 80px;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #222;
+    color: white;
+}
+
+footer a {
+    color: hotpink;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.photo-card {
+    background: white;
+    border-radius: 18px;
+    padding: 12px;
+    text-align: center;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+    transition: transform 0.2s ease;
+}
+
+.photo-card:hover {
+    transform: translateY(-5px);
+}
+
+.photo-box {
+    height: 160px;
+    border-radius: 14px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border: 3px solid hotpink;
+}
+
+.photo-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photo-card p {
+    margin: 0;
+    font-weight: bold;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fffbe6;
+    padding: 20px;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    background: #ffe066;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* MEMORY GAME */
+.memory-board {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.memory-card {
+    width: 80px;
+    height: 80px;
+    background: #fffae6;
+    border-radius: 10px;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.memory-card.flipped {
+    background: #ffe066;
+}
+
+.memory-card.matched {
+    background: #b3ffb3;
+    cursor: default;
+}
+
+
+
+/* Reaction */
+#reactionBox {
+    height: 120px;
+    background: #ff6b6b;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    /* GENERAL */
+    section {
+        padding: 30px 15px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    /* HERO */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-img {
+        max-width: 90%;
+    }
+
+    /* FAVORITE CARDS */
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    /* GALLERY */
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+
+    .photo-box {
+        height: 140px;
+    }
+
+    /* MEMORY GAME */
+    .memory-board {
+        grid-template-columns: repeat(4, 65px);
+        gap: 8px;
+    }
+
+    .memory-card {
+        width: 65px;
+        height: 65px;
+        font-size: 1.6rem;
+    }
+
+    /* REACTION GAME */
+    #reactionBox {
+        height: 100px;
+        font-size: 1.3rem;
+    }
+
+    button {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px auto;
+        font-size: 1.1rem;
+    }
+}
